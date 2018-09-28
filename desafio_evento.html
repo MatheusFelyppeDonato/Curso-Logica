@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Java Script Desafio</title>
+		<script> 
+			function modificaEstilo(corDeFundo){
+				document.getElementById('input').style.backgroundColor = corDeFundo			}
+			function validaCampo() {
+ 				let valorCampo = document.getElementById('input').value
+ 				if(valorCampo.length < 3) {
+ 				document.getElementById('input').style.backgroundColor = "red" 
+ 			}else{
+ 				document.getElementById('input').style.backgroundColor = "green" 
+ 			}
+ 		}
+		</script>
+	</head>
+
+	<body>
+
+		<input type="text" onfocus="modificaEstilo('yellow')" onblur="validaCampo()" id="input"> 
+	</body>
+</html>
