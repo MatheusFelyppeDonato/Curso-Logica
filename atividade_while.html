@@ -4,28 +4,16 @@
 	<meta charset="utf-8">
 	<title>Java Script</title>
 	<script>
-
-		var lista_Frutas = Array()
-
-		lista_Frutas[0] = 'Maracuja'
-		lista_Frutas[1] = 'Morango'
-		lista_Frutas[2] = 'Maçã'
-		lista_Frutas[3] = 'Uva'
-
-		for (var i = 0; i < lista_Frutas.length; i++) {
-			document.write(lista_Frutas[i] + '</br>')
-		}
-		/*
-		console.log('Inicio')
-		while (var x = 1;x <= 10; x++){
-			while(var y = 0; y <= 10; y++){
-				document.write('1 x ' + y + ' = ' + (1 * y) + ' </br>')
+		y = 0 
+		while (y < 10){
+			y++
+			i = 0
+			while (i <= 10){
+			document.write( y + ' x ' + i + ' = ' + (y * i) + '</br>')
+			i++;
 			}
-			document.write('</hr>')
-		}	*/
-
-
- 
+		document.write('</br>');	
+		}	
 	</script>
 </head>
 <body>
